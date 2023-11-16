@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "默陌老屋手迹";
+    src: url('laowushouji.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "仓耳渔阳体";
+    src: url('TsangerYuYangT_W02_W02.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "新蒂文征明体";
+    src: url('sidiwen.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "阿里妈妈刀隶体";
+    src: url('AlimamaDaoLiTi.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "阿里妈妈东大楷";
+    src: url('AlimamaDongFangDaKai-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}

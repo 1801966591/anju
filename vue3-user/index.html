@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>安居租房</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+    <!-- 解决逆地理编码，根据经纬度获取地址信息 -->
+    <script type="text/javascript">
+        window._AMapSecurityConfig = {
+            securityJsCode: 'dcc90093725f6d49bd2808a8f0e1c404', //所申请的安全密钥 注意这是安全密钥而不是key
+        }
+    </script>
+  </body>
+</html>

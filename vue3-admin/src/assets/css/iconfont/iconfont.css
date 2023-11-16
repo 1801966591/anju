@@ -1,0 +1,303 @@
+@font-face {
+  font-family: "element-icons"; /* Project id 4208855 */
+  src: url('iconfont.woff2?t=1697909467092') format('woff2'),
+       url('iconfont.woff?t=1697909467092') format('woff'),
+       url('iconfont.ttf?t=1697909467092') format('truetype');
+}
+
+[class^="el-icon"], [class*=" el-icon"] {
+  font-family: "element-icons", sans-serif !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.el-icon-money:before {
+  content: "\e67e";
+}
+
+.el-icon-user:before {
+  content: "\e61a";
+}
+
+.el-icon-complete:before {
+  content: "\e654";
+}
+
+.el-icon-rent:before {
+  content: "\e900";
+}
+
+.el-icon-relet:before {
+  content: "\e605";
+}
+
+.el-icon-renting-out:before {
+  content: "\e60b";
+}
+
+.el-icon-repair:before {
+  content: "\e64a";
+}
+
+.el-icon-order:before {
+  content: "\e897";
+}
+
+.el-icon-message:before {
+  content: "\e619";
+}
+
+.el-icon-tabulation:before {
+  content: "\e602";
+}
+
+.el-icon-large-image:before {
+  content: "\e642";
+}
+
+.el-icon-maintenance:before {
+  content: "\e68d";
+}
+
+.el-icon-repair-report:before {
+  content: "\e610";
+}
+
+.el-icon-customer-service:before {
+  content: "\e698";
+}
+
+.el-icon-PC:before {
+  content: "\e641";
+}
+
+.el-icon-chair:before {
+  content: "\e603";
+}
+
+.el-icon-office-desk:before {
+  content: "\e61b";
+}
+
+.el-icon-hot-water-heater:before {
+  content: "\e66e";
+}
+
+.el-icon-bed:before {
+  content: "\e7f9";
+}
+
+.el-icon-bedside-table:before {
+  content: "\e609";
+}
+
+.el-icon-wifi:before {
+  content: "\e894";
+}
+
+.el-icon-lamp:before {
+  content: "\e89f";
+}
+
+.el-icon-microwave-oven:before {
+  content: "\e67d";
+}
+
+.el-icon-curtain:before {
+  content: "\e684";
+}
+
+.el-icon-seat:before {
+  content: "\e63c";
+}
+
+.el-icon-refrigerator:before {
+  content: "\e90b";
+}
+
+.el-icon-washing-machine:before {
+  content: "\e90d";
+}
+
+.el-icon-air-conditioning:before {
+  content: "\e90e";
+}
+
+.el-icon-TV:before {
+  content: "\e618";
+}
+
+.el-icon-sofa:before {
+  content: "\e60d";
+}
+
+.el-icon-wardrobe:before {
+  content: "\e60a";
+}
+
+.el-icon-heating:before {
+  content: "\e665";
+}
+
+.el-icon-gas-stove:before {
+  content: "\e604";
+}
+
+.el-icon-desk:before {
+  content: "\e76b";
+}
+
+.el-icon-water-dispenser:before {
+  content: "\e76c";
+}
+
+.el-icon-range-hood:before {
+  content: "\e76d";
+}
+
+.el-icon-induction-cooker:before {
+  content: "\e76e";
+}
+
+.el-icon-listing:before {
+  content: "\e655";
+}
+
+.el-icon-house:before {
+  content: "\e656";
+}
+
+.el-icon-my-apply:before {
+  content: "\e61d";
+}
+
+.el-icon-house-audit:before {
+  content: "\e7eb";
+}
+
+.el-icon-house-resource:before {
+  content: "\e608";
+}
+
+.el-icon-dict-value:before {
+  content: "\e74c";
+}
+
+.el-icon-home:before {
+  content: "\e6b8";
+}
+
+.el-icon-system:before {
+  content: "\e6a6";
+}
+
+.el-icon-function:before {
+  content: "\e648";
+}
+
+.el-icon-zixun:before {
+  content: "\e6b3";
+}
+
+.el-icon-liked:before {
+  content: "\e601";
+}
+
+.el-icon-like:before {
+  content: "\e600";
+}
+
+.el-icon-reply:before {
+  content: "\e712";
+}
+
+.el-icon-evaluation:before {
+  content: "\e647";
+}
+
+.el-icon-alipay:before {
+  content: "\e87c";
+}
+
+.el-icon-comment:before {
+  content: "\e63b";
+}
+
+.el-icon-dict:before {
+  content: "\e626";
+}
+
+.el-icon-import:before {
+  content: "\e607";
+}
+
+.el-icon-export:before {
+  content: "\e606";
+}
+
+.el-icon-chat:before {
+  content: "\e614";
+}
+
+.el-icon-notice:before {
+  content: "\e695";
+}
+
+.el-icon-baseline-menu:before {
+  content: "\e616";
+}
+
+.el-icon-new-reserve:before {
+  content: "\e613";
+}
+
+.el-icon-reserve-app:before {
+  content: "\e62e";
+}
+
+.el-icon-ic_reserve:before {
+  content: "\e611";
+}
+
+.el-icon-AUDIT:before {
+  content: "\ea19";
+}
+
+.el-icon-audit:before {
+  content: "\e7bf";
+}
+
+.el-icon-apply:before {
+  content: "\e61c";
+}
+
+.el-icon-log:before {
+  content: "\e617";
+}
+
+.el-icon-disable:before {
+  content: "\e615";
+}
+
+.el-icon-userInfo:before {
+  content: "\e625";
+}
+
+.el-icon-role:before {
+  content: "\e612";
+}
+
+.el-icon-reset:before {
+  content: "\e63a";
+}
+
+.el-icon-cancel-fullScreen:before {
+  content: "\eb98";
+}
+
+.el-icon-fullScreen:before {
+  content: "\eb99";
+}
+

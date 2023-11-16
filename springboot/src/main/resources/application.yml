@@ -1,0 +1,47 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/anju?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+  mail:
+    protocol: smtps
+    # 配置smtp服务器地址
+    host: smtp.163.com
+    # 发送者邮箱
+    username: zhongzhen_12138@163.com
+    # 配置邮箱密码，注意，不是真的密码，而是申请的授权码
+    password: KQDDLOUGEXVVJQNV
+    # 端口号为465或587
+    port: 587
+    #默认的邮件编码为UTF-8
+    default-encoding: UTF-8
+server:
+  port: 8989
+mybatis-plus:
+  configuration:
+    #在映射实体或者属性时，将数据库中表名和字段名中的下划线去掉，按照驼峰命名法映射
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: ASSIGN_ID
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.anju.springboot.entity
+anju:
+  path: D:\develop\Project\anju-PRD\springboot\src\main\resources\upload\
+alipay:
+  appId: 9021000126656481
+  appPrivateKey: MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCkj0bybHpoJ59qmYKN2RIfdbk3oYoVHnRydgXxX4ThfHdynccGz0IcPcQjPzC1Bq+S0+JI84/7PURFNzB68ubEIFarLYwfqvkrvOWHphGbbhUgfUrDJ50EKCAuYhwfzdY6mWh8Eh0K+C+EJYYjRu38gXhosuVJJZ14+k+TY5cJgwDBNy89cj4Rzg7CrjjgbyM7hXiVXwnShmFvEaXZXE2QrYo28Yfp99mv0c2f8FP7Cy4dkbh0fdp3mx4YEPRsDdZOgm6hNNJ0zTLQ6emkyOK/xtuyxnd4cmsg/z+4M0cPhKJM2eSnYEtfYfE56RzDLRqoRsKh7z1oGqORfjosV3FvAgMBAAECggEBAIKYGivFnxcNatxEW3GK9XD2Ejlt/5FnC+7Sb0DxFxmDl5/kStDCpqqW8hMu0M65MZkKgih28qrmIknz1IuePTkkmONcUDnJi9kEHfwa9RousKGKDUz3IQrtdSyaO8uZpQv4Nw1PqrDL6Zmr1dolLjUX4qDkaEY2jdQ2gfRsMq8ed626wqnDYE6iRXk2ypislsWlirPvSzzcqxyUkien7P89USeTPEOuqfECLA1m33glsDp7DmzwgFNlrkfnFwl4l8mWuK0BzsaL2yAIMuKv2xAvxLyxraAopW+MshRE85M4EHL0CSPn9Rd/T0/lYUtnV9fdfQOJiHYzJ/ZYBk18YVECgYEA8mWFQQ1FE+7A5rvWt+4SVkdCs7QJbz70BZjy08HMxNaoBr0/IZajtoX4UxHETL0Llm5bnJ009LPx8mVonSYwaCXLf6o8zxecxigtLBJEoUPmrnvMLy4jaEMw+v3cMB9eaf4XotsfF4jFqYehTfhl4bj98R2hANoGp7RYqLbSvMUCgYEArct7+2B96q5Gou9Sk9w1A0iQxfSwL1eXUgP5/Vs/2fcxNdbSWFobVnu0OQs9H5yOgngd1pOmbnPN3KF+BpEgS9JFBjLRzH2Ixz8fHBUtBGZpPlnxQ3KcFXsgT/cdFADvf1GzKlHQ9AzZscWwoioJuV3oXrA1VKAiYpxhpQCYQKMCgYEAzEGiBUwiToadBJF6gSlbSFrqKTXn0VdyF5ln3ersG15q3qrwHOSsdez0cUOCb8vJjOzXw+RxMFbF5aVwfyQkHE7k6WJRtYzHLe/DCOUn8eCe7Z8iUwuFCKG+D3KF7gMw8w4Las9Mpu846P+CfIp5h7j0PA7kkiwm+YCuSRUuBaUCgYBF9L53NSP6LyRnuYW31s/P/omn5RJ2O//BF7Cs9uoAxqucTFhnD/4pFao5u/hinRYQFmGMWeqIUzzuLmMYKZqiaoU2NYaVlYJVEWdoWm3Ac6ixXGrtB1kknGcpSQL/ZlEBItXHlx9Q3UtTb4vl+p3na5F5a9xLsBmnL+NuE4s1mQKBgAjq4dqGrrQ6ymPsZyqPFn541eEWcB0yKdH3a8D3VAWciSanSM1i6tzFiZTPEjRvhG/zKdLx5I0L5TqtMxlFA8nv3GaRtvSK233KdMKNAkSyLAUeqqY1CZR/HmyoAmfX4IZIrFa0KtLd+2CCL0Pf27PM5WOkOwqUmjVLYWgqXevm
+  alipayPublicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqhoUheYziJ950HKLG4CF9MRxNws5YIrdp6JuRDp5i533V0vEDoGDqnEz+MpgGz07X+vxP7LvOVKawX4yvY7drYx5lLFih9tPE9mw/eDGuluqH2afbH/EnwLknG7lGe/PKzlPC6LKeDiQfX7BgWnxR8bgP5Wk961n+qryQkjpkipb4gluqeP00FCQraYH7gv1mie1uQ15uT72GdDyFnSnkydUp6bGxqqwedVu1yQVo+M07r5sMh+BQXqyY/RphAAeeRpSD6lifxIEFXi/iReE7ksMA6xpFqGX9Zlm4ZtmKLpf25VPoQVxJQNC7itHp4WbsAu8Jz22RZ9RKRntYT6rYwIDAQAB
+  #必须开启内网穿透
+  notifyUrl: http://uiugg6.natappfree.cc/api/alipay/notify
+

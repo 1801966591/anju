@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.anju.springboot.mapper.RentAuditMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.anju.springboot.entity.RentAudit">
+        <id column="id" property="id" />
+        <result column="house_id" property="houseId" />
+        <result column="user_id" property="userId" />
+        <result column="term" property="term" />
+        <result column="name" property="name" />
+        <result column="mobile" property="mobile" />
+        <result column="remark" property="remark" />
+        <result column="audit_status" property="auditStatus" />
+        <result column="reason" property="reason" />
+        <result column="apply_time" property="applyTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="apply_type" property="applyType" />
+        <result column="rent_id" property="rentId" />
+    </resultMap>
+    <select id="getByConditionForLandlord" resultType="com.anju.springboot.entity.RentAudit">
+        select  r.id,house_id,user_id,term,r.name,mobile,remark,r.audit_status,reason,apply_time,r.update_time,apply_type,rent_id
+        from rent_audit r
+        join house h on h.id=r.house_id
+        <where>
+            <if test="houseId != '' and houseId != null">
+                and house_id=#{houseId}
+            </if>
+            <if test="name != '' and name != null">
+                and r.name like concat('%',#{name},'%')
+            </if>
+            <if test="userId != '' and userId != null">
+                and h.author_id=#{userId}
+            </if>
+        </where>
+        order by apply_time DESC
+        limit #{pageNo},#{pageSize}
+    </select>
+    <select id="getTotalByConditionForLandlord" resultType="java.lang.Integer">
+        select  count(r.id)
+        from rent_audit r
+        join house h on h.id=r.house_id
+        <where>
+            <if test="houseId != '' and houseId != null">
+                and house_id=#{houseId}
+            </if>
+            <if test="name != '' and name != null">
+                and r.name like concat('%',#{name},'%')
+            </if>
+            <if test="userId != '' and userId != null">
+                and h.author_id=#{userId}
+            </if>
+        </where>
+    </select>
+    <select id="getByConditionForUser" resultType="com.anju.springboot.entity.RentAudit">
+        select  *
+        from rent_audit
+        <where>
+            <if test="houseId != '' and houseId != null">
+                and house_id=#{houseId}
+            </if>
+            <if test="name != '' and name != null">
+                and name like concat('%',#{name},'%')
+            </if>
+            <if test="userId != '' and userId != null">
+                and user_id=#{userId}
+            </if>
+        </where>
+        order by apply_time DESC
+        limit #{pageNo},#{pageSize}
+    </select>
+    <select id="getTotalByConditionForUser" resultType="java.lang.Integer">
+        select count(*)
+        from rent_audit
+        <where>
+            <if test="houseId != '' and houseId != null">
+                and house_id=#{houseId}
+            </if>
+            <if test="name != '' and name != null">
+                and name like concat('%',#{name},'%')
+            </if>
+            <if test="userId != '' and userId != null">
+                and user_id=#{userId}
+            </if>
+        </where>
+    </select>
+
+</mapper>

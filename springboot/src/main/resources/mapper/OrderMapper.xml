@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.anju.springboot.mapper.OrderMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.anju.springboot.entity.Order">
+        <id column="id" property="id" />
+        <result column="house_id" property="houseId" />
+        <result column="user_id" property="userId" />
+        <result column="no" property="no" />
+        <result column="pay_status" property="payStatus" />
+        <result column="total_amount" property="totalAmount" />
+        <result column="term" property="term" />
+        <result column="create_time" property="createTime" />
+        <result column="payment_time" property="paymentTime" />
+        <result column="alipay_no" property="alipayNo" />
+        <result column="name" property="name" />
+        <result column="order_type" property="orderType" />
+        <result column="rent_id" property="rentId" />
+        <result column="return_time" property="returnTime" />
+    </resultMap>
+    <select id="getByConditionForLandlord" resultType="com.anju.springboot.entity.Order">
+        select  r.id,house_id,user_id,term,no,pay_status,total_amount,due_time,r.create_time,payment_time,alipay_no,rent_id,order_type,return_time
+        from rent_order r
+        join house h on h.id=r.house_id
+        <where>
+            <if test="houseId != '' and houseId != null">
+                and house_id=#{houseId}
+            </if>
+            <if test="name != '' and name != null">
+                and r.name like concat('%',#{name},'%')
+            </if>
+            <if test="userId != '' and userId != null">
+                and h.author_id=#{userId}
+            </if>
+        </where>
+        order by r.create_time DESC
+        limit #{pageNo},#{pageSize}
+    </select>
+    <select id="getTotalByConditionForLandlord" resultType="java.lang.Integer">
+        select  count(r.id)
+        from rent_order r
+        join house h on h.id=r.house_id
+        <where>
+            <if test="houseId != '' and houseId != null">
+                and house_id=#{houseId}
+            </if>
+            <if test="name != '' and name != null">
+                and r.name like concat('%',#{name},'%')
+            </if>
+            <if test="userId != '' and userId != null">
+                and h.author_id=#{userId}
+            </if>
+        </where>
+    </select>
+    <select id="getByConditionForUser" resultType="com.anju.springboot.entity.Order">
+        select  *
+        from rent_order
+        <where>
+            <if test="houseId != '' and houseId != null">
+                and house_id=#{houseId}
+            </if>
+            <if test="name != '' and name != null">
+                and name like concat('%',#{name},'%')
+            </if>
+            <if test="userId != '' and userId != null">
+                and user_id=#{userId}
+            </if>
+        </where>
+        order by create_time DESC
+        limit #{pageNo},#{pageSize}
+    </select>
+    <select id="getTotalByConditionForUser" resultType="java.lang.Integer">
+        select  count(*)
+        from rent_order
+        <where>
+            <if test="houseId != '' and houseId != null">
+                and house_id=#{houseId}
+            </if>
+            <if test="name != '' and name != null">
+                and name like concat('%',#{name},'%')
+            </if>
+            <if test="userId != '' and userId != null">
+                and user_id=#{userId}
+            </if>
+        </where>
+    </select>
+
+</mapper>

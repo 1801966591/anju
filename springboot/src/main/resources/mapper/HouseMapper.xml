@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.anju.springboot.mapper.HouseMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.anju.springboot.entity.House">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="house_type" property="houseType" />
+        <result column="toward" property="toward" />
+        <result column="rent_type" property="rentType" />
+        <result column="area" property="area" />
+        <result column="decoration" property="decoration" />
+        <result column="floor" property="floor" />
+        <result column="total_floor" property="totalFloor" />
+        <result column="elevator" property="elevator" />
+        <result column="rent" property="rent" />
+        <result column="author_id" property="authorId" />
+        <result column="listing_status" property="listingStatus" />
+        <result column="rent_status" property="rentStatus" />
+        <result column="view_status" property="viewStatus" />
+        <result column="start_time" property="startTime" />
+        <result column="end_time" property="endTime" />
+        <result column="description" property="description" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <select id="getByName" resultType="com.anju.springboot.entity.House">
+        select * from house
+        <where>
+            <if test="name != '' and name != null">
+                and name like concat('%',#{name},'%')
+            </if>
+        </where>
+        order by create_time desc
+        limit #{pageNo},#{pageSize}
+    </select>
+    <select id="getTotalByName" resultType="java.lang.Integer">
+        select count(*) from house
+        <where>
+            <if test="name != '' and name != null">
+                and name like concat('%',#{name},'%')
+            </if>
+        </where>
+    </select>
+
+
+
+</mapper>

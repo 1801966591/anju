@@ -1,0 +1,513 @@
+{
+  "id": "4208855",
+  "name": "anju",
+  "font_family": "element-icons",
+  "css_prefix_text": "el-icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1134330",
+      "name": "钱袋",
+      "font_class": "money",
+      "unicode": "e67e",
+      "unicode_decimal": 59006
+    },
+    {
+      "icon_id": "3739760",
+      "name": "用户管理",
+      "font_class": "user",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "629364",
+      "name": "完成",
+      "font_class": "complete",
+      "unicode": "e654",
+      "unicode_decimal": 58964
+    },
+    {
+      "icon_id": "4174752",
+      "name": "租赁",
+      "font_class": "rent",
+      "unicode": "e900",
+      "unicode_decimal": 59648
+    },
+    {
+      "icon_id": "1368541",
+      "name": "续租",
+      "font_class": "relet",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "1368721",
+      "name": "退租",
+      "font_class": "renting-out",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "6352445",
+      "name": "报修",
+      "font_class": "repair",
+      "unicode": "e64a",
+      "unicode_decimal": 58954
+    },
+    {
+      "icon_id": "2076282",
+      "name": "订单",
+      "font_class": "order",
+      "unicode": "e897",
+      "unicode_decimal": 59543
+    },
+    {
+      "icon_id": "10298532",
+      "name": "消息中心",
+      "font_class": "message",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "201552",
+      "name": "列表模式",
+      "font_class": "tabulation",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "6447164",
+      "name": "大图展示",
+      "font_class": "large-image",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "783681",
+      "name": "维护",
+      "font_class": "maintenance",
+      "unicode": "e68d",
+      "unicode_decimal": 59021
+    },
+    {
+      "icon_id": "16696757",
+      "name": "报修管理",
+      "font_class": "repair-report",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "789130",
+      "name": "客户服务  客服",
+      "font_class": "customer-service",
+      "unicode": "e698",
+      "unicode_decimal": 59032
+    },
+    {
+      "icon_id": "2901877",
+      "name": "PC",
+      "font_class": "PC",
+      "unicode": "e641",
+      "unicode_decimal": 58945
+    },
+    {
+      "icon_id": "3859298",
+      "name": "办公椅",
+      "font_class": "chair",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "10823819",
+      "name": "房产之窗图标-43桌子",
+      "font_class": "office-desk",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "14301726",
+      "name": "热水器",
+      "font_class": "hot-water-heater",
+      "unicode": "e66e",
+      "unicode_decimal": 58990
+    },
+    {
+      "icon_id": "6803648",
+      "name": "2-Bed Room",
+      "font_class": "bed",
+      "unicode": "e7f9",
+      "unicode_decimal": 59385
+    },
+    {
+      "icon_id": "1147046",
+      "name": "床头柜",
+      "font_class": "bedside-table",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "2076274",
+      "name": "wifi",
+      "font_class": "wifi",
+      "unicode": "e894",
+      "unicode_decimal": 59540
+    },
+    {
+      "icon_id": "2076307",
+      "name": "台灯",
+      "font_class": "lamp",
+      "unicode": "e89f",
+      "unicode_decimal": 59551
+    },
+    {
+      "icon_id": "2271247",
+      "name": "微波炉",
+      "font_class": "microwave-oven",
+      "unicode": "e67d",
+      "unicode_decimal": 59005
+    },
+    {
+      "icon_id": "2273348",
+      "name": "窗帘",
+      "font_class": "curtain",
+      "unicode": "e684",
+      "unicode_decimal": 59012
+    },
+    {
+      "icon_id": "4178881",
+      "name": "cat_btn_home_s",
+      "font_class": "seat",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    },
+    {
+      "icon_id": "4762912",
+      "name": "冰箱",
+      "font_class": "refrigerator",
+      "unicode": "e90b",
+      "unicode_decimal": 59659
+    },
+    {
+      "icon_id": "4762918",
+      "name": "洗衣机",
+      "font_class": "washing-machine",
+      "unicode": "e90d",
+      "unicode_decimal": 59661
+    },
+    {
+      "icon_id": "4762919",
+      "name": "空调",
+      "font_class": "air-conditioning",
+      "unicode": "e90e",
+      "unicode_decimal": 59662
+    },
+    {
+      "icon_id": "5124378",
+      "name": "电视",
+      "font_class": "TV",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "5187409",
+      "name": "沙发",
+      "font_class": "sofa",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "5643631",
+      "name": "衣柜",
+      "font_class": "wardrobe",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "6331963",
+      "name": "暖气",
+      "font_class": "heating",
+      "unicode": "e665",
+      "unicode_decimal": 58981
+    },
+    {
+      "icon_id": "10737671",
+      "name": "燃气灶",
+      "font_class": "gas-stove",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "35124763",
+      "name": "书桌",
+      "font_class": "desk",
+      "unicode": "e76b",
+      "unicode_decimal": 59243
+    },
+    {
+      "icon_id": "35124769",
+      "name": "饮水机",
+      "font_class": "water-dispenser",
+      "unicode": "e76c",
+      "unicode_decimal": 59244
+    },
+    {
+      "icon_id": "35124776",
+      "name": "油烟机",
+      "font_class": "range-hood",
+      "unicode": "e76d",
+      "unicode_decimal": 59245
+    },
+    {
+      "icon_id": "35124777",
+      "name": "电磁炉",
+      "font_class": "induction-cooker",
+      "unicode": "e76e",
+      "unicode_decimal": 59246
+    },
+    {
+      "icon_id": "36075081",
+      "name": "上架",
+      "font_class": "listing",
+      "unicode": "e655",
+      "unicode_decimal": 58965
+    },
+    {
+      "icon_id": "1985072",
+      "name": "最新房源",
+      "font_class": "house",
+      "unicode": "e656",
+      "unicode_decimal": 58966
+    },
+    {
+      "icon_id": "7269313",
+      "name": "我的申请-默认",
+      "font_class": "my-apply",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "1861719",
+      "name": "房源审核",
+      "font_class": "house-audit",
+      "unicode": "e7eb",
+      "unicode_decimal": 59371
+    },
+    {
+      "icon_id": "33385660",
+      "name": "a-Workshopwarehousebasicdata",
+      "font_class": "house-resource",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "14349661",
+      "name": "menu_字典值管理",
+      "font_class": "dict-value",
+      "unicode": "e74c",
+      "unicode_decimal": 59212
+    },
+    {
+      "icon_id": "33516",
+      "name": "home",
+      "font_class": "home",
+      "unicode": "e6b8",
+      "unicode_decimal": 59064
+    },
+    {
+      "icon_id": "1160233",
+      "name": "system",
+      "font_class": "system",
+      "unicode": "e6a6",
+      "unicode_decimal": 59046
+    },
+    {
+      "icon_id": "29468100",
+      "name": "功能管理",
+      "font_class": "function",
+      "unicode": "e648",
+      "unicode_decimal": 58952
+    },
+    {
+      "icon_id": "11594397",
+      "name": "咨询",
+      "font_class": "zixun",
+      "unicode": "e6b3",
+      "unicode_decimal": 59059
+    },
+    {
+      "icon_id": "37304277",
+      "name": "liked",
+      "font_class": "liked",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "77697",
+      "name": "点赞",
+      "font_class": "like",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "15188541",
+      "name": "reply",
+      "font_class": "reply",
+      "unicode": "e712",
+      "unicode_decimal": 59154
+    },
+    {
+      "icon_id": "9207355",
+      "name": "evaluation",
+      "font_class": "evaluation",
+      "unicode": "e647",
+      "unicode_decimal": 58951
+    },
+    {
+      "icon_id": "4936955",
+      "name": "alipay",
+      "font_class": "alipay",
+      "unicode": "e87c",
+      "unicode_decimal": 59516
+    },
+    {
+      "icon_id": "5119327",
+      "name": "comment",
+      "font_class": "comment",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "16880980",
+      "name": "dict",
+      "font_class": "dict",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    },
+    {
+      "icon_id": "36270897",
+      "name": "import",
+      "font_class": "import",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "8352356",
+      "name": "export",
+      "font_class": "export",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "128548",
+      "name": "chat",
+      "font_class": "chat",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "14331554",
+      "name": "notice",
+      "font_class": "notice",
+      "unicode": "e695",
+      "unicode_decimal": 59029
+    },
+    {
+      "icon_id": "7826088",
+      "name": "menu",
+      "font_class": "baseline-menu",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "35480991",
+      "name": "新建看房预订",
+      "font_class": "new-reserve",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "1359360",
+      "name": "reserve-app",
+      "font_class": "reserve-app",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "4734160",
+      "name": "已预定",
+      "font_class": "ic_reserve",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "23072901",
+      "name": "AUDIT",
+      "font_class": "AUDIT",
+      "unicode": "ea19",
+      "unicode_decimal": 59929
+    },
+    {
+      "icon_id": "4766507",
+      "name": "audit",
+      "font_class": "audit",
+      "unicode": "e7bf",
+      "unicode_decimal": 59327
+    },
+    {
+      "icon_id": "9921751",
+      "name": "apply",
+      "font_class": "apply",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "20104510",
+      "name": "日志",
+      "font_class": "log",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "5638797",
+      "name": "禁用",
+      "font_class": "disable",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "997413",
+      "name": "用户信息",
+      "font_class": "userInfo",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "3161597",
+      "name": "管理员_角色管理",
+      "font_class": "role",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "9928611",
+      "name": "reset",
+      "font_class": "reset",
+      "unicode": "e63a",
+      "unicode_decimal": 58938
+    },
+    {
+      "icon_id": "5387942",
+      "name": "取消全屏_o",
+      "font_class": "cancel-fullScreen",
+      "unicode": "eb98",
+      "unicode_decimal": 60312
+    },
+    {
+      "icon_id": "5387948",
+      "name": "全屏_o",
+      "font_class": "fullScreen",
+      "unicode": "eb99",
+      "unicode_decimal": 60313
+    }
+  ]
+}

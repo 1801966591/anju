@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "默陌老屋手迹";
+    src: url('默陌老屋手迹.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "仓耳渔阳体";
+    src: url('TsangerYuYangT_W02_W02.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "新蒂文征明体";
+    src: url('新蒂文征明体.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "阿里巴巴刀隶体";
+    src: url('AlimamaDaoLiTi.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "PingFang";
+    src: url('PingFang.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "PingFangMedium";
+    src: url('PingFangMedium.ttf');
+    font-weight: normal;
+    font-style: normal;
+}

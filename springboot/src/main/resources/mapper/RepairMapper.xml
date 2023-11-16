@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.anju.springboot.mapper.RepairMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.anju.springboot.entity.Repair">
+        <id column="id" property="id" />
+        <result column="house_id" property="houseId" />
+        <result column="user_id" property="userId" />
+        <result column="rent_id" property="rentId" />
+        <result column="repair_info" property="repairInfo" />
+        <result column="create_time" property="createTime" />
+        <result column="repair_time" property="repairTime" />
+        <result column="repair_status" property="repairStatus" />
+        <result column="repair_type" property="repairType" />
+        <result column="repair_times" property="repairTimes" />
+    </resultMap>
+
+    <select id="getByConditionForLandlord" resultType="com.anju.springboot.entity.Repair">
+        select  r.id,house_id,user_id,rent_id,repair_info,r.create_time,repair_time,repair_status,repair_type,repair_times
+        from repair r
+        join house h on h.id=r.house_id
+        <where>
+            <if test="houseId != '' and houseId != null">
+                and house_id=#{houseId}
+            </if>
+            <if test="userId != '' and userId != null">
+                and h.author_id=#{userId}
+            </if>
+        </where>
+        order by r.create_time DESC
+        limit #{pageNo},#{pageSize}
+    </select>
+
+    <select id="getTotalByConditionForLandlord" resultType="java.lang.Integer">
+        select  count(r.id)
+        from repair r
+        join house h on h.id=r.house_id
+        <where>
+            <if test="houseId != '' and houseId != null">
+                and house_id=#{houseId}
+            </if>
+            <if test="userId != '' and userId != null">
+                and h.author_id=#{userId}
+            </if>
+        </where>
+    </select>
+    <select id="getByConditionForUser" resultType="com.anju.springboot.entity.Repair">
+        select *
+        from repair
+        <where>
+            <if test="houseId != '' and houseId != null">
+                and house_id=#{houseId}
+            </if>
+            <if test="userId != '' and userId != null">
+                and user_id=#{userId}
+            </if>
+        </where>
+        order by create_time DESC
+        limit #{pageNo},#{pageSize}
+    </select>
+    <select id="getTotalByConditionForUser" resultType="java.lang.Integer">
+        select count(*)
+        from repair
+        <where>
+            <if test="houseId != '' and houseId != null">
+                and house_id=#{houseId}
+            </if>
+            <if test="userId != '' and userId != null">
+                and user_id=#{userId}
+            </if>
+        </where>
+    </select>
+
+
+</mapper>
